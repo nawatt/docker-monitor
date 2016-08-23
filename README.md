@@ -5,7 +5,7 @@ A docker-friendly NodeJS server that converts docker events stream into pubsub v
 Sometimes you need to listen to specific container events but you can't keep an http stream open (which is the case in a lot of frameworks except for nodejs :D )
 
 # How to use it
-Clone the project into your project as a sub folder `./docker-webhooks` then include it in your `docker-compose` file like the following:
+include it in your `docker-compose` file like the following:
 
 ```yaml
   version: 2
@@ -17,7 +17,7 @@ Clone the project into your project as a sub folder `./docker-webhooks` then inc
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock:r
         - dockerwebhooksdata:/var/app/data
-      build: ./docker-webhooks
+      image: mhdsyrwan/docker-webhooks:latest
       environment:
         - PORT=8888
       expose:
