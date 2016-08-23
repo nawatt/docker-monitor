@@ -21,7 +21,12 @@ DockerEventsHub = {
       console.log(`Sending ${data.Type}#${data.Action} to ${listener.hook_url}`);
 
       try {
-        request({ method: listener.hook_method, uri: listener.hook_url,json: data });
+        request({
+          method: listener.hook_method,
+          uri: listener.hook_url,
+          json: data,
+          headers: listener.hook_headers
+        });
       } catch (e) {
         console.log(e.toString());
       }

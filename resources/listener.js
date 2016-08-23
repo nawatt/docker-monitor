@@ -46,6 +46,7 @@ function listener_params(params) {
     hook_url: params.hook_url,
     hook_method: params.hook_method,
     hook_name: params.hook_name,
+    hook_headers: params.hook_headers,
     app_name: params.app_name,
     filters: params.filters
   };

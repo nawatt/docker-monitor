@@ -31,11 +31,15 @@ Then you can send it requests like:
 **Request:**
 ```http
 POST /listeners
+Content-Type: application/json
 
 {
   "hook_url" : "myapp:3000/my_path",
   "hook_method": "POST",
   "hook_name": "mydaemon_monitor",
+  "hook_headers": {
+    "Authorization": "Basic QWxhZGRpbjpPcGVuU2VzYW1l"
+  }
   "app_name": "com.company.app",
   "filters": {
     "event": ["start"],
