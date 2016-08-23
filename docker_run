@@ -1,2 +1,2 @@
 docker build -t docker-webhooks .
-docker run -it -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock docker-webhooks node app.js
+docker run -it -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock docker-webhooks $*
