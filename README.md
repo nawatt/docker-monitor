@@ -35,7 +35,7 @@ POST /listeners
 {
   "hook_url" : "myapp:3000/my_path",
   "hook_method": "POST",
-  "hook_name": "mydaemon_monitor"
+  "hook_name": "mydaemon_monitor",
   "app_name": "com.company.app",
   "filters": {
     "event": ["start"],
