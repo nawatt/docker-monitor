@@ -1,0 +1,35 @@
+{
+  "name": "docker-webhooks",
+  "version": "0.1.0",
+  "description": "An events hub that listens for events from docker and broadcast them via webhooks",
+  "main": "app.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MhdSyrwan/docker-webhooks.git"
+  },
+  "keywords": [
+    "docker",
+    "webhooks",
+    "events",
+    "docker-api"
+  ],
+  "author": "Muhammad Al-Syrwan <mhdsyrwan@gmail.com>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MhdSyrwan/docker-webhooks/issues"
+  },
+  "homepage": "https://github.com/MhdSyrwan/docker-webhooks#readme",
+  "dependencies": {
+    "JSONStream": "^1.1.4",
+    "body-parser": "^1.15.2",
+    "dockerode": "^2.3.0",
+    "express": "^4.14.0",
+    "lodash": "^4.15.0",
+    "lowdb": "^0.13.1",
+    "node-uuid": "^1.4.7",
+    "request": "^2.74.0"
+  }
+}
