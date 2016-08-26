@@ -86,3 +86,8 @@ GET /listeners
 ```http
 GET /listeners/:id
 ```
+
+# Development
+This project is tested on a limited set of use cases. Bug-reporting, enhancements and questions are welcome via Github issues.
+
+Currently, a test script `/test.js` is written casually. you can run the tests via `npm test`

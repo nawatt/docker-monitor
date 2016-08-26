@@ -8,7 +8,9 @@ const db = lowdb(`data/${global.node_env}.json`, {
 })
 
 // Init
-db.defaults({ listeners: [] })
+db.defaults({
+    listeners: []
+  })
   .value()
 
 module.exports = db;

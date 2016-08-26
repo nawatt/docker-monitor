@@ -1,6 +1,6 @@
-var db = require('./db.js');
+var db = require('../config/db.js');
 var request = require('request');
-var DockerEventsEmitter = require('./utils/docker_events_emitter')
+var DockerEventsEmitter = require('./docker_events_emitter')
 var Docker = require('dockerode');
 
 var docker = new Docker();
@@ -41,7 +41,6 @@ DockerEventsHub = {
       DockerEventsHub.registerListener(listeners[i]);
     }
   }
-
 }
 
 module.exports = DockerEventsHub;
