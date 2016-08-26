@@ -1,3 +1,5 @@
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)]()
+
 # docker-webhooks
 A docker-friendly NodeJS server that converts docker events stream into pubsub via registering webhooks.
 
