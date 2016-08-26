@@ -15,7 +15,7 @@ include it in your `docker-compose` file like the following:
   services:
     dockerwebhooks:
       volumes:
-        - /var/run/docker.sock:/var/run/docker.sock:r
+        - /var/run/docker.sock:/var/run/docker.sock:ro
         - dockerwebhooksdata:/var/app/data
       image: mhdsyrwan/docker-webhooks:latest
       environment:
@@ -39,7 +39,7 @@ Content-Type: application/json
   "hook_name": "mydaemon_monitor",
   "hook_headers": {
     "Authorization": "Basic QWxhZGRpbjpPcGVuU2VzYW1l"
-  }
+  },
   "app_name": "com.company.app",
   "filters": {
     "event": ["start"],
