@@ -16,8 +16,10 @@ class DockerEventsEmitter {
     var options = {
       filters: JSON.stringify(this.filters)
     }
-    console.log(`Listening for events with options ${options}`);
+    console.log(`Listening for events with options`);
+    console.log(options);
     this.docker.getEvents(options, (err, rawStream) => {
+      if (err) console.log(err);
       this.rawStream = rawStream;
       rawStream.pipe(this.objectStream);
     });

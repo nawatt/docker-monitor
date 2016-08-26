@@ -4,8 +4,8 @@
   "description": "An events hub that listens for events from docker and broadcast them via webhooks",
   "main": "app.js",
   "scripts": {
-    "test": "node test.js",
-    "start": "node app.js"
+    "test": "NODE_ENV=test node test.js",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",

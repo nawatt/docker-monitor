@@ -2,7 +2,7 @@
 A docker-friendly NodeJS server that converts docker events stream into pubsub via registering webhooks.
 
 # Why?
-Sometimes you need to listen to specific container events but you can't keep an http stream open (which is the case in a lot of frameworks except for nodejs :D )
+Sometimes you need to listen to specific container events but you can't keep an http stream open (which is the case in many non-event-based frameworks)
 
 # How to use it
 include it in your `docker-compose` file like the following:
@@ -65,7 +65,7 @@ Content-Type: application/json
 
 When an event arrives, it will be sent to you on the `hook_url` you chose via the `hook_method` you chose.
 ### Why should i pass a hook_name-app_name pair?
-When you pass `app_name`/`hook_name` you protect your call from redefining a predefined listener. So, in that case you'll get `200` instead of `201` as an http status code.
+When you pass `app_name`/`hook_name` you protect your call from redefining a predefined listener. So, in that case you'll get `200` instead of `201` as an http status code (it will also update other fields).
 
 ## Unregistering a listener
 
