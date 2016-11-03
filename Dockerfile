@@ -10,8 +10,6 @@ COPY package.json package.json
 
 RUN npm install
 
-VOLUME ["/var/app/data"]
-
 COPY . .
 
 CMD ["npm", "start"]
