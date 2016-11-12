@@ -1,6 +1,6 @@
-[![Docker Automated build](https://img.shields.io/docker/automated/mhdsyrwan/docker-webhooks.svg?maxAge=2592000)](https://hub.docker.com/r/mhdsyrwan/docker-webhooks/)
+[![Docker Automated build](https://img.shields.io/docker/automated/mhdsyrwan/docker-monitor.svg?maxAge=2592000)](https://hub.docker.com/r/mhdsyrwan/docker-monitor/)
 [![node 6.4.0](https://img.shields.io/badge/node-v6.4.0-yellow.svg?maxAge=2592000)](#)
-[![](https://images.microbadger.com/badges/image/mhdsyrwan/docker-webhooks.svg)](https://microbadger.com/images/mhdsyrwan/docker-webhooks "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/mhdsyrwan/docker-monitor.svg)](https://microbadger.com/images/mhdsyrwan/docker-monitor "Get your own image badge on microbadger.com")
 
 # docker-webhooks
 A docker-friendly NodeJS server that converts docker events stream into pubsub via registering webhooks.
